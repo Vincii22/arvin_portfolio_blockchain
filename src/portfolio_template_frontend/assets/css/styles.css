@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvin - Portfolio</title>
-    <link rel="icon" href="./assets/images/logo.png" type="image/png"> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Playfair+Display:wght@400&family=Montserrat:wght@300&family=Raleway:wght@300&family=Bodoni+Moda:wght@400&display=swap" rel="stylesheet">
-</head>
-<style>
-    *{
+*{
     list-style-type: none;
     text-decoration: none;
 
@@ -142,19 +130,14 @@ nav {
 }
 
 .hero-image {
-    width: 60%; /* Image takes 60% of the width */
+    width: 60%; /* Image takes 35% of the width */
     margin: 0 auto; /* Center the image */
-    background-image: url('../images/profile1.png'); /* Correct path to the image */
-    background-size: cover; /* Cover the container */
-    background-position: center; /* Center the image */
-    height: 45vh; /* Set the height of the image */
 }
 
 .hero-image img {
     width: 100%; /* Make the image responsive */
     height: 45vh; /* Set the height of the image */
     object-fit: cover; /* Cover the container without distortion */
-    background-image: url('images/profile1.png');
 }
 .title{
     width: 100%;
@@ -329,184 +312,3 @@ nav {
     margin-left: 10px; /* Space between button and link */
     align-self: center; /* Center vertically */
 }
-</style>
-<body>
-    <!-- Nav Section -->
-    <section class="nav">
-        <nav>
-            <div class="logo">
-                <a href="">arvin.</a>
-            </div>
-
-            <div class="links">
-                <ul>
-                    <li><a href="">WORK</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="nav-button">
-                <a href="">LET'S TALK</a>
-            </div>
-        </nav>
-    </section>
-
-
-    <!-- Hero Section  -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-
-            </div>
-
-            <div class="intro">
-                <div class="title">
-                    <h1>Backend Developer</h1>
-                </div>
-                <div class="sub-title">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Pellentesque consectetur tincidunt vestibulum. Pellentesque 
-                    varius nibh tellus, quis gravida sem mollis quis. 
-                </div>
-            </div>
-        </div>
-
-        <div class="visitor-count">
-            <p>Visitor count: </p>
-        </div>
-    </section>
-    
-
-
-    <!-- Services Section  -->
-    <section class="services">
-        <div class="service-container">
-
-            <div class="service">
-                <div class="service-title">
-                    <h3>DESKTOP APP DEVELOPMENT</h3>
-                </div>
-                <div class="service-sub-title">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque consectetur tincidunt vestibulum. Pellentesque 
-                        varius nibh tellus, quis gravida sem mollis quis. 
-                    </p>
-                </div>
-                <div class="service-button">
-                        <button class="circle-button"><i class="fa fa-arrow-right"></i></button>
-                    <a href="">ABOUT SYSTEM DEVELOPMENT</a>
-                </div>
-            </div>
-
-            <div class="service">
-                <div class="service-title">
-                    <h3>WEB DEVELOPMENT</h3>
-                </div>
-                <div class="service-sub-title">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque consectetur tincidunt vestibulum. Pellentesque 
-                        varius nibh tellus, quis gravida sem mollis quis. 
-                    </p>
-                </div>
-                <div class="service-button">
-                        <button class="circle-button"><i class="fa fa-arrow-right"></i></button>
-                    <a href="">ABOUT WEB DEVELOPMENT</a>
-                </div>
-            </div>
-
-            <div class="service">
-                <div class="service-title">
-                    <h3>MOBILE APP DEVELOPMENT</h3>
-                </div>
-                <div class="service-sub-title">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque consectetur tincidunt vestibulum. Pellentesque 
-                        varius nibh tellus, quis gravida sem mollis quis. 
-                    </p>
-                </div>
-                <div class="service-button">
-                        <button class="circle-button"><i class="fa fa-arrow-right"></i></button>
-                    <a href="">ABOUT MOBILE APP DEVELOPMENT</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section  -->
-    <section class="works">
-        <div class="work-container">
-            <div class="work-title">
-                <h1>Selected Work</h1>
-
-                <div class="work-button">
-                    <button class="work-circle-button"><i class="fa fa-arrow-right"></i></button>
-                        <a href="">SEE ALL</a>
-                </div>
-            </div>
-
-            <div class="works-box">
-                <div class="work">
-                    
-                    <div class="work-label">
-                        <h2>SCHOOL</h2>
-                        <h2>SYSTEM</h2>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="work-label">
-                        <h2>SCHOOL</h2>
-                        <h2>SYSTEM</h2>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="work-label">
-                        <h2>COMPANY</h2>
-                        <h2>WEBSITE</h2>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="work-label">
-                        <h2>FREELANCE</h2>
-                        <h2>MOBILE APP</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Section  -->
-    <section class="client">
-        <div class="client-container">
-            <div class="client-title">
-                <h1>What my Client says.</h1>
-            </div>
-
-            <div class="clients-box">
-                <div class="client">
-
-                </div>
-                <div class="client">
-                    
-                </div>
-                <div class="client">
-                    
-                </div>
-                <div class="client">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- Footer Section  -->
-
-    <footer>
-
-    </footer>
-</body>
-</html>
-
