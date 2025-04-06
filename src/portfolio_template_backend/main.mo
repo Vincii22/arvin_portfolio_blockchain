@@ -1,5 +1,6 @@
 import Nat "mo:base/Nat";
 import Debug "mo:base/Debug";
+import Array "mo:base/Array";  // Make sure Array is imported
 
 actor WebsiteBackend {
 
@@ -22,6 +23,20 @@ actor WebsiteBackend {
     let message = "Welcome to our website! Total visits so far: " # Nat.toText(visitCount);
     Debug.print("Greet called. Message: " # message);
     return message;
+  };
+
+  // Stable state: List to hold comments
+  stable var comments : [Text] = [];
+
+  // Function: Add a comment
+  public func addComment(comment: Text) : async Text {
+    comments := Array.append<Text>(comments, [comment]);  // Add the comment to the list
+    return "Comment added successfully!";
+  };
+
+  // Query: Get all comments
+  public query func getComments() : async [Text] {
+    return comments;
   };
 
 };
